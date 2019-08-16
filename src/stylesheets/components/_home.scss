@@ -2,13 +2,49 @@
   text-align: center;
 
   .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
+    min-height: 80vh;
+    
+    background-color: #000000;
     color: white;
+    
+    position: relative;
+    padding-top: 20vh;
+
+    .introTxt {
+      float: left;
+      
+      height: 100%;
+      width: 50%;
+    
+      padding-left: 7%;
+      padding-top: 3%; 
+
+      .introParagraph {
+        font-size: 3vh;
+        text-transform: uppercase;
+      
+        width: 80%;
+        padding-left: 10%;
+      }
+    }
+
+    .profileImgContainer {
+      float: right;
+      height: 100%;
+      width: 20%;
+      
+      padding-right: 23%;
+
+      .profilePic {
+        background: url(../../assets/images/amberhoogland.jpg) center top no-repeat;
+        background-size: cover;
+        width: 350px;
+        height: 550px;
+        box-shadow: 55px 15px 70px 0 black inset, -45px -55px 90px 0 black inset; 
+      
+        margin: 0 auto;
+      }
+    }
   }
 }
